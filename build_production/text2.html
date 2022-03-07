@@ -1,0 +1,84 @@
+---
+title: "sesión agendada"
+preheader: "Please confirm your email address in order to activate your account"
+bodyClass: bg-gray-100
+---
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-gray-100">
+          <table class="w-600 sm:w-full">
+            <tr>
+              <td class="p-48 sm:py-32 sm:px-24 text-center">
+                <!-- -->
+              </td>
+            </tr>
+            <tr>
+              <td align="center" class="sm:px-24">
+                <table class="w-full">
+                  <tr>
+                    <td class="bg-white text-gray-800 text-base text-center p-48 sm:px-24 leading-24 rounded">
+                      <img class="mx-auto" style="margin: 0;" src="https://theravi-bucket.s3.us-east-2.amazonaws.com/email/email6.png" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-primary-500 p-16 sm:px-10 leading-24 text-center">
+                      <span class="text-white text-2xl font-extrabold">Agendaste una sesión</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-gray-0">
+                      <table>
+                        <tr>
+                          <td class="pt-20 px-44 text-center">
+                            <img src="https://i.imgur.com/QCtuSiv.png">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pt-20 px-44 pb-44 align-middle text-center">
+                            <span class="text-gray-200 text-lg">
+                              Tu sesión con 
+                              <span class="font-bold">
+                                PROFESSIONAL_NAME 
+                              </span>
+                              fue agendada con éxito, la misma tendrá lugar el día
+                              <strong>
+                                DAY_SESSION
+                              </strong>
+                              de
+                              <strong>
+                                MONTH_SESSION
+                              </strong>
+                              a las
+                              <strong>
+                                HOUR_SESSION
+                              </strong>
+                              y tendrá una duración de <strong>DURATION_SESSION</strong> minutos
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-gray-0">
+                      <table class="w-full">
+                        <tr>
+                          <td class="p-44 text-center" align="center" >
+                            <span class="px-28 py-16 bg-primary-500 text-white font-bold text-sm rounded-3xl">
+                              <a class="text-white no-underline" href="LINK_SESSION">IR A LA SESIÓN</a></span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>
